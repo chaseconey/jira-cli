@@ -19,4 +19,28 @@ A very simple command-line interface to your Jira instance.
 
 * Install globally via composer
 
-`composer global require chaseconey/jira-cli:~0.0.1`
+`composer global require chaseconey/jira-cli:~0.1`
+
+* Initialize config file
+
+`jira init`
+
+* Setup necessary config options (all are required)
+
+`vim ~/.jira-cli/.env`
+
+* Run commands!
+
+### Example commands
+
+Perform full-text searches through the search command:
+
+`jira search "some interesting search"`
+
+Get detailed information about a specific issue:
+
+`jira key PROJ-1`
+
+Get detailed information with all of the associated comments:
+
+`jira key PROJ-1 --comments`
