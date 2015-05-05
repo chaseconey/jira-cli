@@ -6,3 +6,17 @@ A very simple command-line interface to your Jira instance.
 
 *In Development*
 
+### Quickstart
+
+*As of right now, these lines are required in your global composer json due to dependency issue*
+
+```json
+	{
+		"minimum-stability": "dev",
+		"prefer-stable": true
+	}
+```
+
+* Install globally via composer
+
+`composer global require chaseconey/jira-cli:~0.0.1`
