@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4596c96c6db4de1111ca43ace412cd8a",
+    "hash": "21994a900ac6be3ba31d8add89d70718",
     "packages": [
         {
             "name": "chobie/jira-api-restclient",
