@@ -17,6 +17,7 @@
     }
   ],
   "require": {
+    "php": ">=5.4",
     "symfony/console": "~2.6",
     "chobie/jira-api-restclient": "2.0.x@dev",
     "vlucas/phpdotenv": "~1.1"
