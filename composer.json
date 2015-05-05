@@ -1,4 +1,21 @@
 {
+  "name": "chaseconey/jira-cli",
+  "type": "library",
+  "description": "A simple jira command-line utility",
+  "keywords": [
+    "jira",
+    "jira-cli"
+  ],
+  "homepage": "https://github.com/chaseconey/jira-cli",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordi Boggiano",
+      "email": "j.boggiano@seld.be",
+      "homepage": "http://seld.be",
+      "role": "Developer"
+    }
+  ],
   "require": {
     "symfony/console": "~2.6",
     "chobie/jira-api-restclient": "2.0.*@dev",
