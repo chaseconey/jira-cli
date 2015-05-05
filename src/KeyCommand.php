@@ -9,7 +9,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class JiraKeyCommand extends JiraCommand {
+class KeyCommand extends JiraCommand {
 
 	public function configure() {
 		$this->setName('key')

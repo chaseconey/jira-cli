@@ -4,14 +4,31 @@
 
 use Symfony\Component\Console\Application;
 
-require 'vendor/autoload.php';
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+	require __DIR__ . '/vendor/autoload.php';
+} else {
+	require __DIR__ . '/../../autoload.php';
+}
+
+function jira_home_path() {
+	if (isset($_SERVER['HOME'])) {
+		return $_SERVER['HOME'] . '/.jira-cli';
+	} else {
+		return $_SERVER['HOMEDRIVE'] . $_SERVER['HOMEPATH'] . DIRECTORY_SEPARATOR . '.jira-cli';
+	}
+}
 
 // Load .env variables
-Dotenv::load(__DIR__);
+if (file_exists(__DIR__ . '/.env')) {
+	Dotenv::load(__DIR__);
+} else {
+	Dotenv::load(jira_home_path());
+}
 
-$app = new Application();
+$app = new Application('Jira CLI Utility', '0.1.0');
 
-$app->add(new \App\JiraSearchCommand());
-$app->add(new \App\JiraKeyCommand());
+$app->add(new \App\InitCommand());
+$app->add(new \App\SearchCommand());
+$app->add(new \App\KeyCommand());
 
 $app->run();
