@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+
+<?php
+
+use Symfony\Component\Console\Application;
+
+require 'vendor/autoload.php';
+
+// Load .env variables
+Dotenv::load(__DIR__);
+
+$app = new Application();
+
+$app->add(new \App\JiraSearchCommand());
+$app->add(new \App\JiraKeyCommand());
+
+$app->run();
