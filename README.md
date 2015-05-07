@@ -19,7 +19,7 @@ A very simple command-line interface to your Jira instance.
 
 * Install globally via composer
 
-`composer global require chaseconey/jira-cli:~0.1`
+`composer global require "chaseconey/jira-cli=~0.1"`
 
 * Initialize config file
 
