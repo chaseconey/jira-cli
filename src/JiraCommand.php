@@ -8,7 +8,6 @@ use Symfony\Component\Console\Command\Command;
 
 abstract class JiraCommand extends Command
 {
-
     const COMMENT_SEPARATOR = '-------------------------------------------';
 
     /**

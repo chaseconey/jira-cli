@@ -11,7 +11,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class KeyCommand extends JiraCommand
 {
-
     public function configure()
     {
         $this->setName('key')
@@ -100,5 +99,4 @@ class KeyCommand extends JiraCommand
 
         return $lines;
     }
-
 }

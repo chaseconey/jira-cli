@@ -13,7 +13,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class SearchCommand extends Command
 {
-
     public function configure()
     {
         $this->setName('search')
@@ -74,5 +73,4 @@ class SearchCommand extends Command
             getenv('JIRA_URL') . '/browse/' . $issue->getKey()
         ];
     }
-
 }

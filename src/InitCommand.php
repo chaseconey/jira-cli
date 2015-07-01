@@ -8,7 +8,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class InitCommand extends Command
 {
-
     /**
      * Configure the command options.
      *
@@ -41,5 +40,4 @@ class InitCommand extends Command
         $output->writeln('<comment>Creating .env file...</comment> <info>✔</info>');
         $output->writeln('<comment>.env file created at:</comment> ' . jira_home_path() . '/.env, please fill out required information');
     }
-
 }
